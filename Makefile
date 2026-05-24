@@ -9,6 +9,9 @@ all:
 watch:
 	$(DOCKER) latexmk -pvc main.tex
 
+reset:
+	echo "" > main.tex
+
 clean:
 	$(DOCKER) latexmk -C
 	rm -rf *.nav *.snm *.vrb
